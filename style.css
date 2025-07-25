@@ -204,7 +204,7 @@ img.trusted-badge {
 
 /* ---------newsletter section start here--------- */
 section.newsletter {
-    background-image: url(/assets/news-letter-bg.png);
+    background-image: url(assets/news-letter-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
