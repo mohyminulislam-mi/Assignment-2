@@ -204,7 +204,7 @@ img.trusted-badge {
 
 /* ---------newsletter section start here--------- */
 section.newsletter {
-    background-image: url(../assets/news-letter-bg.png);
+    background-image: url(/assets/news-letter-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -246,17 +246,43 @@ button.newsletter-btn {
     color: white;
 }
 
+/* footer start hare  */
+.footer-wrap.display-flex {
+    padding: 76px 0;
+}
 
+.footer-logo-content {
+    width: 360px;
+}
 
+.footer-logo-content img {
+    margin-bottom: 25px;
+}
 
-
-
-
-
-
-
-
-
+.footer-link > ul > li {
+    list-style: none;
+    padding-bottom: 26px;
+}
+.footer-link > ul > li > a{
+color: #8987A1;
+}
+.socials-link {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+img.twitter-icon {
+    margin-top: 4px;
+    width: 37px;
+    height: 29px;
+}
+.footer-link1 > ul > li {
+    list-style: none;
+    padding-bottom: 26px;
+}
+.footer-link1 > ul > li > a{
+color: #8987A1;
+}
 
 /* Responsive for Mobile device media query  */
 
@@ -364,5 +390,22 @@ form {
 
 input[type="text"] {
     width: 53%;
+}
+/* footer start hare  */
+.footer-wrap {
+    flex-direction: column;
+    text-align: start;
+}
+
+.footer-logo-content {
+    text-align: start !important;
+    padding-bottom: 30px;
+}
+
+.footer-link, .footer-link1  {
+    margin-right: 232px;
+}
+.footer-link1  {
+    margin-right: 275px;
 }
 }
