@@ -81,12 +81,12 @@ nav > ul >li {
     padding: 15px 0;
 }
 /* ------ Our-Plants content start here-------- */
-.our-plants-content {
+.our-plants-content, .latest-deals-content {
     text-align: center;
-    padding-bottom: 45px;
+    padding-bottom: 50px;
 }
-.our-plants-content h1 {
-    font-size: 3.5rem;
+.our-plants-content h1, .latest-deals-content h1 {
+    font-size: 3.2rem;
     padding-bottom: 15px;
 }
 .our-plants-boxs{
@@ -139,6 +139,81 @@ img.trusted-badge {
     right: -75px;
     z-index: 999;
 }
+
+/* ------ Latest deal section start here-------- */
+.latest-deals-box1{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.latest-deals-box2{
+    width: 68%;
+    position: relative;
+}
+.latest-deal-inner-box {
+    position: relative;
+}
+.latest-deals-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.latest-deal-inner-box img, .latest-deals-box2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    filter: brightness(0.7);
+}
+.deal-content {
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    text-align: center;
+}
+
+.deal-content h3 {
+    color: white !important;
+    padding-bottom: 3px;
+}
+
+.deal-content a {
+    color: white;
+    text-decoration: underline;
+}
+
+.latest-deals-box2-content {
+    position: absolute;
+    top: 43%;
+    left: 26%;
+    text-align: center;
+}
+.latest-deals-box2-content h1{
+    color: white !important;
+    padding-bottom: 3px;
+    font-size: 2.2rem;
+}
+.latest-deals-box2-content a{
+    color: white !important;
+    padding-bottom: 7px;
+    text-decoration: underline;
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive for Mobile device media query  */
 
 @media screen and (Max-width:576px) {
@@ -175,11 +250,11 @@ nav >ul >li#Cart {
 .plant-box img {
     width: 100%;
 }
-.our-plants-content h1 {
+.our-plants-content h1, .latest-deals-content h1 {
     font-size: 2rem;
 }
 /* ------ Flower & Plants Lover content start here-------- */
-section.flower-plants-lover {
+section.flower-plants-lover, .latest-deals {
     padding-top: 1px;
 }
 .flower-plants-wrap {
@@ -209,5 +284,17 @@ img.trusted-badge {
 }
 .flower-content >ul >li {
     font-size: 1rem;
+}
+/* ------ Latest deal Responsive-------- */
+.latest-deals-images {
+    flex-direction: column;
+}
+
+.latest-deals-box1 {
+    width: 100%;
+}
+
+.latest-deals-box2 {
+    width: 100%;
 }
 }
