@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -6,16 +7,26 @@
     box-sizing: border-box;
 }
 body{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+h1, h2, h3, h4, h5, h6{
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
     font-style: normal;
     /* background-color: #f5f8ff; */
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    font-size: 1.1rem;
+    color: #8987A1;
+}
 /* ----------- shared style -------- */
 .container{
     max-width: 1140px;
-    padding: 5px;
     margin: 0 auto;
 }
 
@@ -38,4 +49,70 @@ section{
 }
 .btn:hover {
     background-color: #45a049;
+}
+.active-text{
+    color: black;
+    font-weight: 600;
+}
+.gray-color {
+    color: #8987A1;
+}
+.text-color{
+    color: #E95A08;
+}
+/* ------------ Header style start here ---------- */
+nav {
+    padding-top: 12px;
+}
+.brand-logo img {
+    width: 104px;
+}
+nav > ul {
+    display: flex;
+    align-items: center;
+}
+nav > ul >li {
+    list-style: none;
+    margin-left: 16px;
+}
+/* ------ Hero content start here-------- */
+.hero-content {
+    padding: 150px 0 55px 0;
+}
+.hero-content-text h1 {
+    font-size: 3.5rem;
+    padding: 15px 0;
+}
+
+
+
+
+/* --- Responsive for Mobile device media query ------ */
+
+@media screen and (Max-width:576px) {
+    /* -- header start here---- */
+.container{
+    padding: 15px;
+    margin: 0 auto;
+}
+
+nav > ul > li {
+    display: none;
+}
+nav >ul >li#Cart {
+    display: block;
+}
+.hero-content {
+    padding: 40px 0;
+}
+.hero-content-wrap {
+    flex-direction: column-reverse;
+}
+.hero-content-image img {
+    width: 105%;
+}
+
+.hero-content-text h1 {
+    font-size: 1.9rem;
+}
 }
