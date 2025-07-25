@@ -202,6 +202,50 @@ img.trusted-badge {
 }
 
 
+/* ---------newsletter section start here--------- */
+section.newsletter {
+    background-image: url(../assets/news-letter-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newsletter-wrap {
+    text-align: center;
+    padding: 90px;
+}
+
+form {
+    width: 700px;
+}
+
+input[type="text"] {
+    padding: 10px 20px;
+    width: 77%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-right: -6px;
+}
+
+.newsletter-content {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-wrap h1 {
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 22px;
+}
+button.newsletter-btn {
+    background-color: #E95A08;
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
 
 
 
@@ -296,5 +340,29 @@ img.trusted-badge {
 
 .latest-deals-box2 {
     width: 100%;
+}
+.latest-deals-box2-content h1 {
+    font-size: 1.4rem;
+}
+
+.latest-deals-box2-content {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+/* ------newsletter section---- */
+.newsletter-wrap h1 {font-size: 1.5rem;}
+
+form {
+    width: 100%;
+}
+
+.newsletter-wrap {
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 53%;
 }
 }
